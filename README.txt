@@ -1,3 +1,20 @@
-Бот диспетчер продажи и покупки eSIM, поставщик в бота заливает кр код с номером, бот его сохраняет в базе данных, потом бота добавляют в группу (админ добавляет в свою) и по команде бот кидает в чат доступные для продажи номера, типы их покупает по холду или бх, нажимают встал или брак, если встал то деньги начисляются поставщику, тот создает заявку в боте на вывод и она приходит в админку админу (заказчику), предварительно указав в ней адрес криптобота, а админ переводит по ней деньги и кликает "перевел"
-Примерное описание продукта как и хотел мой заказчик, там еще реф система есть, профиль с балансом и ID, статистика твоих номеров и тому подобное по мелочи, бот диспетчер короче
-Прилагается видео с функционалом (фотки я брал рандомные из "загрузок" просьба не обращать внимания) я его обрезал по личным причинам поэтому качество к сожалению такое себе, но функционал в полном виде понятен (профиль кликать не стал тоже из-за личных данных)
+🇷🇺 [Читать на русском](README_RU.md)
+
+An asynchronous Telegram dispatch engine engineered for inventory management, distribution workflows, and P2P fulfillment of digital eSIM profiles with crypto billing capabilities.
+
+### Key Architectural Highlights:
+* **Automated Inventory Lifecycle:** Secure ingestion, parsing, and structured storage of carrier QR profiles and IMSI payloads.
+* **Queue & Hold Dispatcher:** Concurrency-safe reservation pipelines for instant wholesale lot acquisition in private dealer groups.
+* **Financial Settlements:** Transaction request dispatching linked with Telegram CryptoBot payment references.
+* **Role-Based Access Control (RBAC):** Distinct state machines and command handlers for system operators, bulk suppliers, and buyers.
+
+### Tech Stack:
+* Python 3.12
+* Aiogram 3.x (Event-driven asynchronous Telegram framework)
+* SQLite / SQLAlchemy (Transactional persistence layer)
+* python-dotenv (Twelve-Factor configuration management)
+
+### Quick Start:
+```bash
+pip install -r requirements.txt
+python main.py
