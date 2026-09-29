@@ -1,3 +1,5 @@
+```markdown
+
 🇷🇺 [Читать на русском](README_RU.md)
 
 An asynchronous Telegram dispatch engine engineered for inventory management, distribution workflows, and P2P fulfillment of digital eSIM profiles with crypto billing capabilities.
